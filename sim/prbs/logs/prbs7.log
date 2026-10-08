@@ -1,0 +1,1773 @@
+# 
+# ==========================================
+#  SERIAL LFSR PRBS7 SIMULATION
+# ==========================================
+# 
+# INFO: Log file = ./sim/prbs/logs/prbs7.log
+# 
+# INFO: Creating work library...
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap work work 
+# Modifying E:/Courses/serdes_digital_project/serdes_digial_project.mpf
+# 
+# INFO: Compiling RTL...
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 23:10:48 on Sep 16,2026
+# vlog -reportprogress 300 -sv ./rtl/prbs/serial_lfsr.sv 
+# -- Compiling module serial_lfsr
+# 
+# Top level modules:
+# 	serial_lfsr
+# End time: 23:10:48 on Sep 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# INFO: Compiling testbench...
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 23:10:48 on Sep 16,2026
+# vlog -reportprogress 300 -sv ./tb/prbs/serial_lfsr_tb.sv 
+# -- Compiling module serial_lfsr_tb
+# 
+# Top level modules:
+# 	serial_lfsr_tb
+# End time: 23:10:48 on Sep 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# INFO: Starting simulation...
+# vsim -voptargs="+acc" work.serial_lfsr_tb 
+# Start time: 23:10:48 on Sep 16,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.serial_lfsr_tb(fast)
+# Loading work.serial_lfsr(fast)
+# 
+# INFO: Waveform disabled
+# 
+# INFO: Running simulation...
+# 
+# ==========================================
+#  PRBS7 TEST START
+# ==========================================
+# Initial state PASS: Expected=0 Actual=0
+# Cycle 1: PASS Expected=0 Actual=0
+# Cycle 2: PASS Expected=0 Actual=0
+# Cycle 3: PASS Expected=0 Actual=0
+# Cycle 4: PASS Expected=0 Actual=0
+# ** Error: Cycle 5: Expected=0 Actual=1
+#    Time: 66 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 6: PASS Expected=1 Actual=1
+# Cycle 7: PASS Expected=0 Actual=0
+# Cycle 8: PASS Expected=0 Actual=0
+# Cycle 9: PASS Expected=0 Actual=0
+# Cycle 10: PASS Expected=0 Actual=0
+# ** Error: Cycle 11: Expected=0 Actual=1
+#    Time: 126 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 12: Expected=1 Actual=0
+#    Time: 136 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 13: PASS Expected=1 Actual=1
+# Cycle 14: PASS Expected=0 Actual=0
+# Cycle 15: PASS Expected=0 Actual=0
+# Cycle 16: PASS Expected=0 Actual=0
+# ** Error: Cycle 17: Expected=0 Actual=1
+#    Time: 186 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 18: PASS Expected=1 Actual=1
+# ** Error: Cycle 19: Expected=0 Actual=1
+#    Time: 206 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 20: PASS Expected=1 Actual=1
+# Cycle 21: PASS Expected=0 Actual=0
+# Cycle 22: PASS Expected=0 Actual=0
+# ** Error: Cycle 23: Expected=0 Actual=1
+#    Time: 246 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 24: Expected=1 Actual=0
+#    Time: 256 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 25: Expected=1 Actual=0
+#    Time: 266 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 26: Expected=1 Actual=0
+#    Time: 276 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 27: PASS Expected=1 Actual=1
+# Cycle 28: PASS Expected=0 Actual=0
+# ** Error: Cycle 29: Expected=0 Actual=1
+#    Time: 306 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 30: PASS Expected=1 Actual=1
+# Cycle 31: PASS Expected=0 Actual=0
+# Cycle 32: PASS Expected=0 Actual=0
+# ** Error: Cycle 33: Expected=0 Actual=1
+#    Time: 346 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 34: PASS Expected=1 Actual=1
+# ** Error: Cycle 35: Expected=0 Actual=1
+#    Time: 366 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 36: Expected=1 Actual=0
+#    Time: 376 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 37: PASS Expected=1 Actual=1
+# Cycle 38: PASS Expected=0 Actual=0
+# ** Error: Cycle 39: Expected=0 Actual=1
+#    Time: 406 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 40: Expected=1 Actual=0
+#    Time: 416 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 41: Expected=1 Actual=0
+#    Time: 426 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 42: PASS Expected=1 Actual=1
+# ** Error: Cycle 43: Expected=0 Actual=1
+#    Time: 446 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 44: PASS Expected=1 Actual=1
+# ** Error: Cycle 45: Expected=0 Actual=1
+#    Time: 466 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 46: PASS Expected=1 Actual=1
+# Cycle 47: PASS Expected=0 Actual=0
+# ** Error: Cycle 48: Expected=0 Actual=1
+#    Time: 496 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 49: Expected=1 Actual=0
+#    Time: 506 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 50: Expected=1 Actual=0
+#    Time: 516 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 51: Expected=1 Actual=0
+#    Time: 526 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 52: Expected=1 Actual=0
+#    Time: 536 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 53: PASS Expected=1 Actual=1
+# ** Error: Cycle 54: Expected=0 Actual=1
+#    Time: 556 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 55: PASS Expected=1 Actual=1
+# Cycle 56: PASS Expected=0 Actual=0
+# Cycle 57: PASS Expected=0 Actual=0
+# Cycle 58: PASS Expected=0 Actual=0
+# ** Error: Cycle 59: Expected=0 Actual=1
+#    Time: 606 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 60: Expected=1 Actual=0
+#    Time: 616 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 61: Expected=1 Actual=0
+#    Time: 626 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 62: PASS Expected=1 Actual=1
+# Cycle 63: PASS Expected=0 Actual=0
+# Cycle 64: PASS Expected=0 Actual=0
+# ** Error: Cycle 65: Expected=0 Actual=1
+#    Time: 666 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 66: PASS Expected=1 Actual=1
+# Cycle 67: PASS Expected=0 Actual=0
+# ** Error: Cycle 68: Expected=0 Actual=1
+#    Time: 696 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 69: PASS Expected=1 Actual=1
+# Cycle 70: PASS Expected=0 Actual=0
+# ** Error: Cycle 71: Expected=0 Actual=1
+#    Time: 726 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 72: Expected=1 Actual=0
+#    Time: 736 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 73: PASS Expected=1 Actual=1
+# ** Error: Cycle 74: Expected=0 Actual=1
+#    Time: 756 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 75: Expected=1 Actual=0
+#    Time: 766 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 76: PASS Expected=1 Actual=1
+# ** Error: Cycle 77: Expected=0 Actual=1
+#    Time: 786 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 78: PASS Expected=1 Actual=1
+# ** Error: Cycle 79: Expected=0 Actual=1
+#    Time: 806 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 80: Expected=1 Actual=0
+#    Time: 816 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 81: PASS Expected=1 Actual=1
+# ** Error: Cycle 82: Expected=0 Actual=1
+#    Time: 836 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 83: Expected=1 Actual=0
+#    Time: 846 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 84: Expected=1 Actual=0
+#    Time: 856 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 85: Expected=1 Actual=0
+#    Time: 866 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 86: PASS Expected=1 Actual=1
+# ** Error: Cycle 87: Expected=0 Actual=1
+#    Time: 886 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 88: Expected=1 Actual=0
+#    Time: 896 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 89: PASS Expected=1 Actual=1
+# Cycle 90: PASS Expected=0 Actual=0
+# Cycle 91: PASS Expected=0 Actual=0
+# ** Error: Cycle 92: Expected=0 Actual=1
+#    Time: 936 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 93: Expected=1 Actual=0
+#    Time: 946 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 94: PASS Expected=1 Actual=1
+# ** Error: Cycle 95: Expected=0 Actual=1
+#    Time: 966 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 96: PASS Expected=1 Actual=1
+# Cycle 97: PASS Expected=0 Actual=0
+# ** Error: Cycle 98: Expected=0 Actual=1
+#    Time: 996 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 99: PASS Expected=1 Actual=1
+# ** Error: Cycle 100: Expected=0 Actual=1
+#    Time: 1016 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 101: Expected=1 Actual=0
+#    Time: 1026 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 102: Expected=1 Actual=0
+#    Time: 1036 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 103: PASS Expected=1 Actual=1
+# ** Error: Cycle 104: Expected=0 Actual=1
+#    Time: 1056 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 105: Expected=1 Actual=0
+#    Time: 1066 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 106: Expected=1 Actual=0
+#    Time: 1076 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 107: PASS Expected=1 Actual=1
+# Cycle 108: PASS Expected=0 Actual=0
+# ** Error: Cycle 109: Expected=0 Actual=1
+#    Time: 1106 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 110: Expected=1 Actual=0
+#    Time: 1116 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 111: PASS Expected=1 Actual=1
+# Cycle 112: PASS Expected=0 Actual=0
+# ** Error: Cycle 113: Expected=0 Actual=1
+#    Time: 1146 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 114: PASS Expected=1 Actual=1
+# ** Error: Cycle 115: Expected=0 Actual=1
+#    Time: 1166 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 116: PASS Expected=1 Actual=1
+# ** Error: Cycle 117: Expected=0 Actual=1
+#    Time: 1186 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 118: PASS Expected=1 Actual=1
+# ** Error: Cycle 119: Expected=0 Actual=1
+#    Time: 1206 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 120: Expected=1 Actual=0
+#    Time: 1216 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 121: Expected=1 Actual=0
+#    Time: 1226 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 122: Expected=1 Actual=0
+#    Time: 1236 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 123: Expected=1 Actual=0
+#    Time: 1246 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 124: Expected=1 Actual=0
+#    Time: 1256 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 125: Expected=1 Actual=0
+#    Time: 1266 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 126: PASS Expected=1 Actual=1
+# PRBS period output check PASS
+# 
+# ==========================================
+#  PRBS7 TEST FAILED: 64 errors
+# ==========================================
+# ** Note: $stop    : ./tb/prbs/serial_lfsr_tb.sv(265)
+#    Time: 1336 ns  Iteration: 0  Instance: /serial_lfsr_tb
+# Break in Module serial_lfsr_tb at ./tb/prbs/serial_lfsr_tb.sv line 265
+# 
+# ==========================================
+#  SIMULATION FINISHED
+# ==========================================
+# 
+# Log file: ./sim/prbs/logs/prbs7.log
+# 
+do ./tb/prbs/run.do.txt
+# 0
+# ./sim/prbs
+# ./sim/prbs/logs
+# ./sim/prbs/logs/prbs7.log
+# 
+# ==========================================
+#  SERIAL LFSR PRBS7 SIMULATION
+# ==========================================
+# 
+# INFO: Log file = ./sim/prbs/logs/prbs7.log
+# End time: 23:11:58 on Sep 16,2026, Elapsed time: 0:01:10
+# Errors: 64, Warnings: 0
+# 
+# INFO: Creating work library...
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap work work 
+# Modifying E:/Courses/serdes_digital_project/serdes_digial_project.mpf
+# 
+# INFO: Compiling RTL...
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 23:11:58 on Sep 16,2026
+# vlog -reportprogress 300 -sv ./rtl/prbs/serial_lfsr.sv 
+# -- Compiling module serial_lfsr
+# 
+# Top level modules:
+# 	serial_lfsr
+# End time: 23:11:58 on Sep 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# INFO: Compiling testbench...
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 23:11:58 on Sep 16,2026
+# vlog -reportprogress 300 -sv ./tb/prbs/serial_lfsr_tb.sv 
+# -- Compiling module serial_lfsr_tb
+# 
+# Top level modules:
+# 	serial_lfsr_tb
+# End time: 23:11:58 on Sep 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# INFO: Starting simulation...
+# vsim -voptargs="+acc" work.serial_lfsr_tb 
+# Start time: 23:11:58 on Sep 16,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.serial_lfsr_tb(fast)
+# Loading work.serial_lfsr(fast)
+# 
+# INFO: Waveform disabled
+# 
+# INFO: Running simulation...
+# 
+# ==========================================
+#  PRBS7 TEST START
+# ==========================================
+# Initial state PASS: Expected=0 Actual=0
+# Cycle 1: PASS Expected=0 Actual=0
+# Cycle 2: PASS Expected=0 Actual=0
+# Cycle 3: PASS Expected=0 Actual=0
+# Cycle 4: PASS Expected=0 Actual=0
+# ** Error: Cycle 5: Expected=0 Actual=1
+#    Time: 66 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 6: PASS Expected=1 Actual=1
+# Cycle 7: PASS Expected=0 Actual=0
+# Cycle 8: PASS Expected=0 Actual=0
+# Cycle 9: PASS Expected=0 Actual=0
+# Cycle 10: PASS Expected=0 Actual=0
+# ** Error: Cycle 11: Expected=0 Actual=1
+#    Time: 126 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 12: Expected=1 Actual=0
+#    Time: 136 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 13: PASS Expected=1 Actual=1
+# Cycle 14: PASS Expected=0 Actual=0
+# Cycle 15: PASS Expected=0 Actual=0
+# Cycle 16: PASS Expected=0 Actual=0
+# ** Error: Cycle 17: Expected=0 Actual=1
+#    Time: 186 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 18: PASS Expected=1 Actual=1
+# ** Error: Cycle 19: Expected=0 Actual=1
+#    Time: 206 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 20: PASS Expected=1 Actual=1
+# Cycle 21: PASS Expected=0 Actual=0
+# Cycle 22: PASS Expected=0 Actual=0
+# ** Error: Cycle 23: Expected=0 Actual=1
+#    Time: 246 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 24: Expected=1 Actual=0
+#    Time: 256 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 25: Expected=1 Actual=0
+#    Time: 266 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 26: Expected=1 Actual=0
+#    Time: 276 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 27: PASS Expected=1 Actual=1
+# Cycle 28: PASS Expected=0 Actual=0
+# ** Error: Cycle 29: Expected=0 Actual=1
+#    Time: 306 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 30: PASS Expected=1 Actual=1
+# Cycle 31: PASS Expected=0 Actual=0
+# Cycle 32: PASS Expected=0 Actual=0
+# ** Error: Cycle 33: Expected=0 Actual=1
+#    Time: 346 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 34: PASS Expected=1 Actual=1
+# ** Error: Cycle 35: Expected=0 Actual=1
+#    Time: 366 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 36: Expected=1 Actual=0
+#    Time: 376 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 37: PASS Expected=1 Actual=1
+# Cycle 38: PASS Expected=0 Actual=0
+# ** Error: Cycle 39: Expected=0 Actual=1
+#    Time: 406 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 40: Expected=1 Actual=0
+#    Time: 416 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 41: Expected=1 Actual=0
+#    Time: 426 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 42: PASS Expected=1 Actual=1
+# ** Error: Cycle 43: Expected=0 Actual=1
+#    Time: 446 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 44: PASS Expected=1 Actual=1
+# ** Error: Cycle 45: Expected=0 Actual=1
+#    Time: 466 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 46: PASS Expected=1 Actual=1
+# Cycle 47: PASS Expected=0 Actual=0
+# ** Error: Cycle 48: Expected=0 Actual=1
+#    Time: 496 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 49: Expected=1 Actual=0
+#    Time: 506 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 50: Expected=1 Actual=0
+#    Time: 516 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 51: Expected=1 Actual=0
+#    Time: 526 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 52: Expected=1 Actual=0
+#    Time: 536 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 53: PASS Expected=1 Actual=1
+# ** Error: Cycle 54: Expected=0 Actual=1
+#    Time: 556 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 55: PASS Expected=1 Actual=1
+# Cycle 56: PASS Expected=0 Actual=0
+# Cycle 57: PASS Expected=0 Actual=0
+# Cycle 58: PASS Expected=0 Actual=0
+# ** Error: Cycle 59: Expected=0 Actual=1
+#    Time: 606 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 60: Expected=1 Actual=0
+#    Time: 616 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 61: Expected=1 Actual=0
+#    Time: 626 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 62: PASS Expected=1 Actual=1
+# Cycle 63: PASS Expected=0 Actual=0
+# Cycle 64: PASS Expected=0 Actual=0
+# ** Error: Cycle 65: Expected=0 Actual=1
+#    Time: 666 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 66: PASS Expected=1 Actual=1
+# Cycle 67: PASS Expected=0 Actual=0
+# ** Error: Cycle 68: Expected=0 Actual=1
+#    Time: 696 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 69: PASS Expected=1 Actual=1
+# Cycle 70: PASS Expected=0 Actual=0
+# ** Error: Cycle 71: Expected=0 Actual=1
+#    Time: 726 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 72: Expected=1 Actual=0
+#    Time: 736 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 73: PASS Expected=1 Actual=1
+# ** Error: Cycle 74: Expected=0 Actual=1
+#    Time: 756 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 75: Expected=1 Actual=0
+#    Time: 766 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 76: PASS Expected=1 Actual=1
+# ** Error: Cycle 77: Expected=0 Actual=1
+#    Time: 786 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 78: PASS Expected=1 Actual=1
+# ** Error: Cycle 79: Expected=0 Actual=1
+#    Time: 806 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 80: Expected=1 Actual=0
+#    Time: 816 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 81: PASS Expected=1 Actual=1
+# ** Error: Cycle 82: Expected=0 Actual=1
+#    Time: 836 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 83: Expected=1 Actual=0
+#    Time: 846 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 84: Expected=1 Actual=0
+#    Time: 856 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 85: Expected=1 Actual=0
+#    Time: 866 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 86: PASS Expected=1 Actual=1
+# ** Error: Cycle 87: Expected=0 Actual=1
+#    Time: 886 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 88: Expected=1 Actual=0
+#    Time: 896 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 89: PASS Expected=1 Actual=1
+# Cycle 90: PASS Expected=0 Actual=0
+# Cycle 91: PASS Expected=0 Actual=0
+# ** Error: Cycle 92: Expected=0 Actual=1
+#    Time: 936 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 93: Expected=1 Actual=0
+#    Time: 946 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 94: PASS Expected=1 Actual=1
+# ** Error: Cycle 95: Expected=0 Actual=1
+#    Time: 966 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 96: PASS Expected=1 Actual=1
+# Cycle 97: PASS Expected=0 Actual=0
+# ** Error: Cycle 98: Expected=0 Actual=1
+#    Time: 996 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 99: PASS Expected=1 Actual=1
+# ** Error: Cycle 100: Expected=0 Actual=1
+#    Time: 1016 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 101: Expected=1 Actual=0
+#    Time: 1026 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 102: Expected=1 Actual=0
+#    Time: 1036 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 103: PASS Expected=1 Actual=1
+# ** Error: Cycle 104: Expected=0 Actual=1
+#    Time: 1056 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 105: Expected=1 Actual=0
+#    Time: 1066 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 106: Expected=1 Actual=0
+#    Time: 1076 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 107: PASS Expected=1 Actual=1
+# Cycle 108: PASS Expected=0 Actual=0
+# ** Error: Cycle 109: Expected=0 Actual=1
+#    Time: 1106 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 110: Expected=1 Actual=0
+#    Time: 1116 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 111: PASS Expected=1 Actual=1
+# Cycle 112: PASS Expected=0 Actual=0
+# ** Error: Cycle 113: Expected=0 Actual=1
+#    Time: 1146 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 114: PASS Expected=1 Actual=1
+# ** Error: Cycle 115: Expected=0 Actual=1
+#    Time: 1166 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 116: PASS Expected=1 Actual=1
+# ** Error: Cycle 117: Expected=0 Actual=1
+#    Time: 1186 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 118: PASS Expected=1 Actual=1
+# ** Error: Cycle 119: Expected=0 Actual=1
+#    Time: 1206 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 120: Expected=1 Actual=0
+#    Time: 1216 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 121: Expected=1 Actual=0
+#    Time: 1226 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 122: Expected=1 Actual=0
+#    Time: 1236 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 123: Expected=1 Actual=0
+#    Time: 1246 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 124: Expected=1 Actual=0
+#    Time: 1256 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 125: Expected=1 Actual=0
+#    Time: 1266 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 126: PASS Expected=1 Actual=1
+# PRBS period output check PASS
+# 
+# ==========================================
+#  PRBS7 TEST FAILED: 64 errors
+# ==========================================
+# ** Note: $stop    : ./tb/prbs/serial_lfsr_tb.sv(265)
+#    Time: 1336 ns  Iteration: 0  Instance: /serial_lfsr_tb
+# Break in Module serial_lfsr_tb at ./tb/prbs/serial_lfsr_tb.sv line 265
+# 
+# ==========================================
+#  SIMULATION FINISHED
+# ==========================================
+# 
+# Log file: ./sim/prbs/logs/prbs7.log
+# 
+do ./tb/prbs/run.do.txt
+# 0
+# ./sim/prbs
+# ./sim/prbs/logs
+# ./sim/prbs/logs/prbs7.log
+# 
+# ==========================================
+#  SERIAL LFSR PRBS7 SIMULATION
+# ==========================================
+# 
+# INFO: Log file = ./sim/prbs/logs/prbs7.log
+# End time: 23:12:18 on Sep 16,2026, Elapsed time: 0:00:20
+# Errors: 64, Warnings: 0
+# 
+# INFO: Creating work library...
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap work work 
+# Modifying E:/Courses/serdes_digital_project/serdes_digial_project.mpf
+# 
+# INFO: Compiling RTL...
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 23:12:18 on Sep 16,2026
+# vlog -reportprogress 300 -sv ./rtl/prbs/serial_lfsr.sv 
+# -- Compiling module serial_lfsr
+# 
+# Top level modules:
+# 	serial_lfsr
+# End time: 23:12:18 on Sep 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# INFO: Compiling testbench...
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 23:12:18 on Sep 16,2026
+# vlog -reportprogress 300 -sv ./tb/prbs/serial_lfsr_tb.sv 
+# -- Compiling module serial_lfsr_tb
+# 
+# Top level modules:
+# 	serial_lfsr_tb
+# End time: 23:12:18 on Sep 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# INFO: Starting simulation...
+# vsim -voptargs="+acc" work.serial_lfsr_tb 
+# Start time: 23:12:18 on Sep 16,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.serial_lfsr_tb(fast)
+# Loading work.serial_lfsr(fast)
+# 
+# INFO: Waveform disabled
+# 
+# INFO: Running simulation...
+# 
+# ==========================================
+#  PRBS7 TEST START
+# ==========================================
+# Initial state PASS: Expected=0 Actual=0
+# Cycle 1: PASS Expected=0 Actual=0
+# Cycle 2: PASS Expected=0 Actual=0
+# Cycle 3: PASS Expected=0 Actual=0
+# Cycle 4: PASS Expected=0 Actual=0
+# ** Error: Cycle 5: Expected=0 Actual=1
+#    Time: 66 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 6: PASS Expected=1 Actual=1
+# Cycle 7: PASS Expected=0 Actual=0
+# Cycle 8: PASS Expected=0 Actual=0
+# Cycle 9: PASS Expected=0 Actual=0
+# Cycle 10: PASS Expected=0 Actual=0
+# ** Error: Cycle 11: Expected=0 Actual=1
+#    Time: 126 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 12: Expected=1 Actual=0
+#    Time: 136 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 13: PASS Expected=1 Actual=1
+# Cycle 14: PASS Expected=0 Actual=0
+# Cycle 15: PASS Expected=0 Actual=0
+# Cycle 16: PASS Expected=0 Actual=0
+# ** Error: Cycle 17: Expected=0 Actual=1
+#    Time: 186 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 18: PASS Expected=1 Actual=1
+# ** Error: Cycle 19: Expected=0 Actual=1
+#    Time: 206 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 20: PASS Expected=1 Actual=1
+# Cycle 21: PASS Expected=0 Actual=0
+# Cycle 22: PASS Expected=0 Actual=0
+# ** Error: Cycle 23: Expected=0 Actual=1
+#    Time: 246 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 24: Expected=1 Actual=0
+#    Time: 256 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 25: Expected=1 Actual=0
+#    Time: 266 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 26: Expected=1 Actual=0
+#    Time: 276 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 27: PASS Expected=1 Actual=1
+# Cycle 28: PASS Expected=0 Actual=0
+# ** Error: Cycle 29: Expected=0 Actual=1
+#    Time: 306 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 30: PASS Expected=1 Actual=1
+# Cycle 31: PASS Expected=0 Actual=0
+# Cycle 32: PASS Expected=0 Actual=0
+# ** Error: Cycle 33: Expected=0 Actual=1
+#    Time: 346 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 34: PASS Expected=1 Actual=1
+# ** Error: Cycle 35: Expected=0 Actual=1
+#    Time: 366 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 36: Expected=1 Actual=0
+#    Time: 376 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 37: PASS Expected=1 Actual=1
+# Cycle 38: PASS Expected=0 Actual=0
+# ** Error: Cycle 39: Expected=0 Actual=1
+#    Time: 406 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 40: Expected=1 Actual=0
+#    Time: 416 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 41: Expected=1 Actual=0
+#    Time: 426 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 42: PASS Expected=1 Actual=1
+# ** Error: Cycle 43: Expected=0 Actual=1
+#    Time: 446 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 44: PASS Expected=1 Actual=1
+# ** Error: Cycle 45: Expected=0 Actual=1
+#    Time: 466 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 46: PASS Expected=1 Actual=1
+# Cycle 47: PASS Expected=0 Actual=0
+# ** Error: Cycle 48: Expected=0 Actual=1
+#    Time: 496 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 49: Expected=1 Actual=0
+#    Time: 506 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 50: Expected=1 Actual=0
+#    Time: 516 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 51: Expected=1 Actual=0
+#    Time: 526 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 52: Expected=1 Actual=0
+#    Time: 536 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 53: PASS Expected=1 Actual=1
+# ** Error: Cycle 54: Expected=0 Actual=1
+#    Time: 556 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 55: PASS Expected=1 Actual=1
+# Cycle 56: PASS Expected=0 Actual=0
+# Cycle 57: PASS Expected=0 Actual=0
+# Cycle 58: PASS Expected=0 Actual=0
+# ** Error: Cycle 59: Expected=0 Actual=1
+#    Time: 606 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 60: Expected=1 Actual=0
+#    Time: 616 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 61: Expected=1 Actual=0
+#    Time: 626 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 62: PASS Expected=1 Actual=1
+# Cycle 63: PASS Expected=0 Actual=0
+# Cycle 64: PASS Expected=0 Actual=0
+# ** Error: Cycle 65: Expected=0 Actual=1
+#    Time: 666 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 66: PASS Expected=1 Actual=1
+# Cycle 67: PASS Expected=0 Actual=0
+# ** Error: Cycle 68: Expected=0 Actual=1
+#    Time: 696 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 69: PASS Expected=1 Actual=1
+# Cycle 70: PASS Expected=0 Actual=0
+# ** Error: Cycle 71: Expected=0 Actual=1
+#    Time: 726 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 72: Expected=1 Actual=0
+#    Time: 736 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 73: PASS Expected=1 Actual=1
+# ** Error: Cycle 74: Expected=0 Actual=1
+#    Time: 756 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 75: Expected=1 Actual=0
+#    Time: 766 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 76: PASS Expected=1 Actual=1
+# ** Error: Cycle 77: Expected=0 Actual=1
+#    Time: 786 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 78: PASS Expected=1 Actual=1
+# ** Error: Cycle 79: Expected=0 Actual=1
+#    Time: 806 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 80: Expected=1 Actual=0
+#    Time: 816 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 81: PASS Expected=1 Actual=1
+# ** Error: Cycle 82: Expected=0 Actual=1
+#    Time: 836 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 83: Expected=1 Actual=0
+#    Time: 846 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 84: Expected=1 Actual=0
+#    Time: 856 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 85: Expected=1 Actual=0
+#    Time: 866 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 86: PASS Expected=1 Actual=1
+# ** Error: Cycle 87: Expected=0 Actual=1
+#    Time: 886 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 88: Expected=1 Actual=0
+#    Time: 896 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 89: PASS Expected=1 Actual=1
+# Cycle 90: PASS Expected=0 Actual=0
+# Cycle 91: PASS Expected=0 Actual=0
+# ** Error: Cycle 92: Expected=0 Actual=1
+#    Time: 936 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 93: Expected=1 Actual=0
+#    Time: 946 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 94: PASS Expected=1 Actual=1
+# ** Error: Cycle 95: Expected=0 Actual=1
+#    Time: 966 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 96: PASS Expected=1 Actual=1
+# Cycle 97: PASS Expected=0 Actual=0
+# ** Error: Cycle 98: Expected=0 Actual=1
+#    Time: 996 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 99: PASS Expected=1 Actual=1
+# ** Error: Cycle 100: Expected=0 Actual=1
+#    Time: 1016 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 101: Expected=1 Actual=0
+#    Time: 1026 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 102: Expected=1 Actual=0
+#    Time: 1036 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 103: PASS Expected=1 Actual=1
+# ** Error: Cycle 104: Expected=0 Actual=1
+#    Time: 1056 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 105: Expected=1 Actual=0
+#    Time: 1066 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 106: Expected=1 Actual=0
+#    Time: 1076 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 107: PASS Expected=1 Actual=1
+# Cycle 108: PASS Expected=0 Actual=0
+# ** Error: Cycle 109: Expected=0 Actual=1
+#    Time: 1106 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 110: Expected=1 Actual=0
+#    Time: 1116 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 111: PASS Expected=1 Actual=1
+# Cycle 112: PASS Expected=0 Actual=0
+# ** Error: Cycle 113: Expected=0 Actual=1
+#    Time: 1146 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 114: PASS Expected=1 Actual=1
+# ** Error: Cycle 115: Expected=0 Actual=1
+#    Time: 1166 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 116: PASS Expected=1 Actual=1
+# ** Error: Cycle 117: Expected=0 Actual=1
+#    Time: 1186 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 118: PASS Expected=1 Actual=1
+# ** Error: Cycle 119: Expected=0 Actual=1
+#    Time: 1206 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 120: Expected=1 Actual=0
+#    Time: 1216 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 121: Expected=1 Actual=0
+#    Time: 1226 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 122: Expected=1 Actual=0
+#    Time: 1236 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 123: Expected=1 Actual=0
+#    Time: 1246 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 124: Expected=1 Actual=0
+#    Time: 1256 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 125: Expected=1 Actual=0
+#    Time: 1266 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 126: PASS Expected=1 Actual=1
+# PRBS period output check PASS
+# 
+# ==========================================
+#  PRBS7 TEST FAILED: 64 errors
+# ==========================================
+# ** Note: $stop    : ./tb/prbs/serial_lfsr_tb.sv(265)
+#    Time: 1336 ns  Iteration: 0  Instance: /serial_lfsr_tb
+# Break in Module serial_lfsr_tb at ./tb/prbs/serial_lfsr_tb.sv line 265
+# 
+# ==========================================
+#  SIMULATION FINISHED
+# ==========================================
+# 
+# Log file: ./sim/prbs/logs/prbs7.log
+# 
+do ./tb/prbs/run.do.txt
+# 0
+# ./sim/prbs
+# ./sim/prbs/logs
+# ./sim/prbs/logs/prbs7.log
+# 
+# ==========================================
+#  SERIAL LFSR PRBS7 SIMULATION
+# ==========================================
+# 
+# INFO: Log file = ./sim/prbs/logs/prbs7.log
+# End time: 23:12:39 on Sep 16,2026, Elapsed time: 0:00:21
+# Errors: 64, Warnings: 0
+# 
+# INFO: Creating work library...
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap work work 
+# Modifying E:/Courses/serdes_digital_project/serdes_digial_project.mpf
+# 
+# INFO: Compiling RTL...
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 23:12:39 on Sep 16,2026
+# vlog -reportprogress 300 -sv ./rtl/prbs/serial_lfsr.sv 
+# -- Compiling module serial_lfsr
+# 
+# Top level modules:
+# 	serial_lfsr
+# End time: 23:12:39 on Sep 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# INFO: Compiling testbench...
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 23:12:39 on Sep 16,2026
+# vlog -reportprogress 300 -sv ./tb/prbs/serial_lfsr_tb.sv 
+# -- Compiling module serial_lfsr_tb
+# 
+# Top level modules:
+# 	serial_lfsr_tb
+# End time: 23:12:39 on Sep 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# INFO: Starting simulation...
+# vsim -voptargs="+acc" work.serial_lfsr_tb 
+# Start time: 23:12:39 on Sep 16,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.serial_lfsr_tb(fast)
+# Loading work.serial_lfsr(fast)
+# 
+# INFO: Waveform disabled
+# 
+# INFO: Running simulation...
+# 
+add wave -position insertpoint  \
+sim:/serial_lfsr_tb/NUM_BITS \
+sim:/serial_lfsr_tb/CLK_PERIOD \
+sim:/serial_lfsr_tb/clk \
+sim:/serial_lfsr_tb/rst_n \
+sim:/serial_lfsr_tb/i_enable \
+sim:/serial_lfsr_tb/prbs_o \
+sim:/serial_lfsr_tb/expected_prbs \
+sim:/serial_lfsr_tb/error_count
+add wave -position insertpoint  \
+sim:/serial_lfsr_tb/dut/SEED \
+sim:/serial_lfsr_tb/dut/i_enable \
+sim:/serial_lfsr_tb/dut/clk \
+sim:/serial_lfsr_tb/dut/rst_n \
+sim:/serial_lfsr_tb/dut/prbs_o \
+sim:/serial_lfsr_tb/dut/lfsr \
+sim:/serial_lfsr_tb/dut/lfsr_next \
+sim:/serial_lfsr_tb/dut/feedback
+run -all
+# ==========================================
+#  PRBS7 TEST START
+# ==========================================
+# Initial state PASS: Expected=0 Actual=0
+# Cycle 1: PASS Expected=0 Actual=0
+# Cycle 2: PASS Expected=0 Actual=0
+# Cycle 3: PASS Expected=0 Actual=0
+# Cycle 4: PASS Expected=0 Actual=0
+# ** Error: Cycle 5: Expected=0 Actual=1
+#    Time: 66 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 6: PASS Expected=1 Actual=1
+# Cycle 7: PASS Expected=0 Actual=0
+# Cycle 8: PASS Expected=0 Actual=0
+# Cycle 9: PASS Expected=0 Actual=0
+# Cycle 10: PASS Expected=0 Actual=0
+# ** Error: Cycle 11: Expected=0 Actual=1
+#    Time: 126 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 12: Expected=1 Actual=0
+#    Time: 136 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 13: PASS Expected=1 Actual=1
+# Cycle 14: PASS Expected=0 Actual=0
+# Cycle 15: PASS Expected=0 Actual=0
+# Cycle 16: PASS Expected=0 Actual=0
+# ** Error: Cycle 17: Expected=0 Actual=1
+#    Time: 186 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 18: PASS Expected=1 Actual=1
+# ** Error: Cycle 19: Expected=0 Actual=1
+#    Time: 206 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 20: PASS Expected=1 Actual=1
+# Cycle 21: PASS Expected=0 Actual=0
+# Cycle 22: PASS Expected=0 Actual=0
+# ** Error: Cycle 23: Expected=0 Actual=1
+#    Time: 246 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 24: Expected=1 Actual=0
+#    Time: 256 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 25: Expected=1 Actual=0
+#    Time: 266 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 26: Expected=1 Actual=0
+#    Time: 276 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 27: PASS Expected=1 Actual=1
+# Cycle 28: PASS Expected=0 Actual=0
+# ** Error: Cycle 29: Expected=0 Actual=1
+#    Time: 306 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 30: PASS Expected=1 Actual=1
+# Cycle 31: PASS Expected=0 Actual=0
+# Cycle 32: PASS Expected=0 Actual=0
+# ** Error: Cycle 33: Expected=0 Actual=1
+#    Time: 346 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 34: PASS Expected=1 Actual=1
+# ** Error: Cycle 35: Expected=0 Actual=1
+#    Time: 366 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 36: Expected=1 Actual=0
+#    Time: 376 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 37: PASS Expected=1 Actual=1
+# Cycle 38: PASS Expected=0 Actual=0
+# ** Error: Cycle 39: Expected=0 Actual=1
+#    Time: 406 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 40: Expected=1 Actual=0
+#    Time: 416 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 41: Expected=1 Actual=0
+#    Time: 426 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 42: PASS Expected=1 Actual=1
+# ** Error: Cycle 43: Expected=0 Actual=1
+#    Time: 446 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 44: PASS Expected=1 Actual=1
+# ** Error: Cycle 45: Expected=0 Actual=1
+#    Time: 466 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 46: PASS Expected=1 Actual=1
+# Cycle 47: PASS Expected=0 Actual=0
+# ** Error: Cycle 48: Expected=0 Actual=1
+#    Time: 496 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 49: Expected=1 Actual=0
+#    Time: 506 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 50: Expected=1 Actual=0
+#    Time: 516 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 51: Expected=1 Actual=0
+#    Time: 526 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 52: Expected=1 Actual=0
+#    Time: 536 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 53: PASS Expected=1 Actual=1
+# ** Error: Cycle 54: Expected=0 Actual=1
+#    Time: 556 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 55: PASS Expected=1 Actual=1
+# Cycle 56: PASS Expected=0 Actual=0
+# Cycle 57: PASS Expected=0 Actual=0
+# Cycle 58: PASS Expected=0 Actual=0
+# ** Error: Cycle 59: Expected=0 Actual=1
+#    Time: 606 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 60: Expected=1 Actual=0
+#    Time: 616 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 61: Expected=1 Actual=0
+#    Time: 626 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 62: PASS Expected=1 Actual=1
+# Cycle 63: PASS Expected=0 Actual=0
+# Cycle 64: PASS Expected=0 Actual=0
+# ** Error: Cycle 65: Expected=0 Actual=1
+#    Time: 666 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 66: PASS Expected=1 Actual=1
+# Cycle 67: PASS Expected=0 Actual=0
+# ** Error: Cycle 68: Expected=0 Actual=1
+#    Time: 696 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 69: PASS Expected=1 Actual=1
+# Cycle 70: PASS Expected=0 Actual=0
+# ** Error: Cycle 71: Expected=0 Actual=1
+#    Time: 726 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 72: Expected=1 Actual=0
+#    Time: 736 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 73: PASS Expected=1 Actual=1
+# ** Error: Cycle 74: Expected=0 Actual=1
+#    Time: 756 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 75: Expected=1 Actual=0
+#    Time: 766 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 76: PASS Expected=1 Actual=1
+# ** Error: Cycle 77: Expected=0 Actual=1
+#    Time: 786 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 78: PASS Expected=1 Actual=1
+# ** Error: Cycle 79: Expected=0 Actual=1
+#    Time: 806 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 80: Expected=1 Actual=0
+#    Time: 816 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 81: PASS Expected=1 Actual=1
+# ** Error: Cycle 82: Expected=0 Actual=1
+#    Time: 836 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 83: Expected=1 Actual=0
+#    Time: 846 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 84: Expected=1 Actual=0
+#    Time: 856 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 85: Expected=1 Actual=0
+#    Time: 866 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 86: PASS Expected=1 Actual=1
+# ** Error: Cycle 87: Expected=0 Actual=1
+#    Time: 886 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 88: Expected=1 Actual=0
+#    Time: 896 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 89: PASS Expected=1 Actual=1
+# Cycle 90: PASS Expected=0 Actual=0
+# Cycle 91: PASS Expected=0 Actual=0
+# ** Error: Cycle 92: Expected=0 Actual=1
+#    Time: 936 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 93: Expected=1 Actual=0
+#    Time: 946 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 94: PASS Expected=1 Actual=1
+# ** Error: Cycle 95: Expected=0 Actual=1
+#    Time: 966 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 96: PASS Expected=1 Actual=1
+# Cycle 97: PASS Expected=0 Actual=0
+# ** Error: Cycle 98: Expected=0 Actual=1
+#    Time: 996 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 99: PASS Expected=1 Actual=1
+# ** Error: Cycle 100: Expected=0 Actual=1
+#    Time: 1016 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 101: Expected=1 Actual=0
+#    Time: 1026 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 102: Expected=1 Actual=0
+#    Time: 1036 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 103: PASS Expected=1 Actual=1
+# ** Error: Cycle 104: Expected=0 Actual=1
+#    Time: 1056 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 105: Expected=1 Actual=0
+#    Time: 1066 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 106: Expected=1 Actual=0
+#    Time: 1076 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 107: PASS Expected=1 Actual=1
+# Cycle 108: PASS Expected=0 Actual=0
+# ** Error: Cycle 109: Expected=0 Actual=1
+#    Time: 1106 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 110: Expected=1 Actual=0
+#    Time: 1116 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 111: PASS Expected=1 Actual=1
+# Cycle 112: PASS Expected=0 Actual=0
+# ** Error: Cycle 113: Expected=0 Actual=1
+#    Time: 1146 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 114: PASS Expected=1 Actual=1
+# ** Error: Cycle 115: Expected=0 Actual=1
+#    Time: 1166 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 116: PASS Expected=1 Actual=1
+# ** Error: Cycle 117: Expected=0 Actual=1
+#    Time: 1186 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 118: PASS Expected=1 Actual=1
+# ** Error: Cycle 119: Expected=0 Actual=1
+#    Time: 1206 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 120: Expected=1 Actual=0
+#    Time: 1216 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 121: Expected=1 Actual=0
+#    Time: 1226 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 122: Expected=1 Actual=0
+#    Time: 1236 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 123: Expected=1 Actual=0
+#    Time: 1246 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 124: Expected=1 Actual=0
+#    Time: 1256 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 125: Expected=1 Actual=0
+#    Time: 1266 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 126: PASS Expected=1 Actual=1
+# PRBS period output check PASS
+# 
+# ==========================================
+#  PRBS7 TEST FAILED: 64 errors
+# ==========================================
+# ** Note: $stop    : ./tb/prbs/serial_lfsr_tb.sv(265)
+#    Time: 1336 ns  Iteration: 0  Instance: /serial_lfsr_tb
+# Break in Module serial_lfsr_tb at ./tb/prbs/serial_lfsr_tb.sv line 265
+do ./tb/prbs/run.do.txt
+# 0
+# ./sim/prbs
+# ./sim/prbs/logs
+# ./sim/prbs/logs/prbs7.log
+# 
+# ==========================================
+#  SERIAL LFSR PRBS7 SIMULATION
+# ==========================================
+# 
+# INFO: Log file = ./sim/prbs/logs/prbs7.log
+# End time: 23:17:00 on Sep 16,2026, Elapsed time: 0:04:21
+# Errors: 64, Warnings: 0
+# 
+# INFO: Creating work library...
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap work work 
+# Modifying E:/Courses/serdes_digital_project/serdes_digial_project.mpf
+# 
+# INFO: Compiling RTL...
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 23:17:00 on Sep 16,2026
+# vlog -reportprogress 300 -sv ./rtl/prbs/serial_lfsr.sv 
+# -- Compiling module serial_lfsr
+# 
+# Top level modules:
+# 	serial_lfsr
+# End time: 23:17:00 on Sep 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# INFO: Compiling testbench...
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 23:17:00 on Sep 16,2026
+# vlog -reportprogress 300 -sv ./tb/prbs/serial_lfsr_tb.sv 
+# -- Compiling module serial_lfsr_tb
+# 
+# Top level modules:
+# 	serial_lfsr_tb
+# End time: 23:17:00 on Sep 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# INFO: Starting simulation...
+# vsim -voptargs="+acc" work.serial_lfsr_tb 
+# Start time: 23:17:00 on Sep 16,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.serial_lfsr_tb(fast)
+# Loading work.serial_lfsr(fast)
+# 
+# INFO: Waveform disabled
+# 
+# INFO: Running simulation...
+# 
+add wave -position insertpoint  \
+sim:/serial_lfsr_tb/NUM_BITS \
+sim:/serial_lfsr_tb/CLK_PERIOD \
+sim:/serial_lfsr_tb/clk \
+sim:/serial_lfsr_tb/rst_n \
+sim:/serial_lfsr_tb/i_enable \
+sim:/serial_lfsr_tb/prbs_o \
+sim:/serial_lfsr_tb/expected_prbs \
+sim:/serial_lfsr_tb/error_count
+add wave -position insertpoint  \
+sim:/serial_lfsr_tb/dut/lfsr
+run -all
+# ==========================================
+#  PRBS7 TEST START
+# ==========================================
+# Initial state PASS: Expected=0 Actual=0
+# Cycle 1: PASS Expected=0 Actual=0
+# Cycle 2: PASS Expected=0 Actual=0
+# Cycle 3: PASS Expected=0 Actual=0
+# Cycle 4: PASS Expected=0 Actual=0
+# ** Error: Cycle 5: Expected=0 Actual=1
+#    Time: 68 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 6: PASS Expected=1 Actual=1
+# Cycle 7: PASS Expected=0 Actual=0
+# Cycle 8: PASS Expected=0 Actual=0
+# Cycle 9: PASS Expected=0 Actual=0
+# Cycle 10: PASS Expected=0 Actual=0
+# ** Error: Cycle 11: Expected=0 Actual=1
+#    Time: 128 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 12: Expected=1 Actual=0
+#    Time: 138 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 13: PASS Expected=1 Actual=1
+# Cycle 14: PASS Expected=0 Actual=0
+# Cycle 15: PASS Expected=0 Actual=0
+# Cycle 16: PASS Expected=0 Actual=0
+# ** Error: Cycle 17: Expected=0 Actual=1
+#    Time: 188 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 18: PASS Expected=1 Actual=1
+# ** Error: Cycle 19: Expected=0 Actual=1
+#    Time: 208 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 20: PASS Expected=1 Actual=1
+# Cycle 21: PASS Expected=0 Actual=0
+# Cycle 22: PASS Expected=0 Actual=0
+# ** Error: Cycle 23: Expected=0 Actual=1
+#    Time: 248 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 24: Expected=1 Actual=0
+#    Time: 258 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 25: Expected=1 Actual=0
+#    Time: 268 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 26: Expected=1 Actual=0
+#    Time: 278 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 27: PASS Expected=1 Actual=1
+# Cycle 28: PASS Expected=0 Actual=0
+# ** Error: Cycle 29: Expected=0 Actual=1
+#    Time: 308 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 30: PASS Expected=1 Actual=1
+# Cycle 31: PASS Expected=0 Actual=0
+# Cycle 32: PASS Expected=0 Actual=0
+# ** Error: Cycle 33: Expected=0 Actual=1
+#    Time: 348 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 34: PASS Expected=1 Actual=1
+# ** Error: Cycle 35: Expected=0 Actual=1
+#    Time: 368 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 36: Expected=1 Actual=0
+#    Time: 378 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 37: PASS Expected=1 Actual=1
+# Cycle 38: PASS Expected=0 Actual=0
+# ** Error: Cycle 39: Expected=0 Actual=1
+#    Time: 408 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 40: Expected=1 Actual=0
+#    Time: 418 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 41: Expected=1 Actual=0
+#    Time: 428 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 42: PASS Expected=1 Actual=1
+# ** Error: Cycle 43: Expected=0 Actual=1
+#    Time: 448 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 44: PASS Expected=1 Actual=1
+# ** Error: Cycle 45: Expected=0 Actual=1
+#    Time: 468 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 46: PASS Expected=1 Actual=1
+# Cycle 47: PASS Expected=0 Actual=0
+# ** Error: Cycle 48: Expected=0 Actual=1
+#    Time: 498 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 49: Expected=1 Actual=0
+#    Time: 508 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 50: Expected=1 Actual=0
+#    Time: 518 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 51: Expected=1 Actual=0
+#    Time: 528 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 52: Expected=1 Actual=0
+#    Time: 538 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 53: PASS Expected=1 Actual=1
+# ** Error: Cycle 54: Expected=0 Actual=1
+#    Time: 558 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 55: PASS Expected=1 Actual=1
+# Cycle 56: PASS Expected=0 Actual=0
+# Cycle 57: PASS Expected=0 Actual=0
+# Cycle 58: PASS Expected=0 Actual=0
+# ** Error: Cycle 59: Expected=0 Actual=1
+#    Time: 608 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 60: Expected=1 Actual=0
+#    Time: 618 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 61: Expected=1 Actual=0
+#    Time: 628 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 62: PASS Expected=1 Actual=1
+# Cycle 63: PASS Expected=0 Actual=0
+# Cycle 64: PASS Expected=0 Actual=0
+# ** Error: Cycle 65: Expected=0 Actual=1
+#    Time: 668 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 66: PASS Expected=1 Actual=1
+# Cycle 67: PASS Expected=0 Actual=0
+# ** Error: Cycle 68: Expected=0 Actual=1
+#    Time: 698 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 69: PASS Expected=1 Actual=1
+# Cycle 70: PASS Expected=0 Actual=0
+# ** Error: Cycle 71: Expected=0 Actual=1
+#    Time: 728 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 72: Expected=1 Actual=0
+#    Time: 738 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 73: PASS Expected=1 Actual=1
+# ** Error: Cycle 74: Expected=0 Actual=1
+#    Time: 758 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 75: Expected=1 Actual=0
+#    Time: 768 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 76: PASS Expected=1 Actual=1
+# ** Error: Cycle 77: Expected=0 Actual=1
+#    Time: 788 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 78: PASS Expected=1 Actual=1
+# ** Error: Cycle 79: Expected=0 Actual=1
+#    Time: 808 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 80: Expected=1 Actual=0
+#    Time: 818 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 81: PASS Expected=1 Actual=1
+# ** Error: Cycle 82: Expected=0 Actual=1
+#    Time: 838 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 83: Expected=1 Actual=0
+#    Time: 848 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 84: Expected=1 Actual=0
+#    Time: 858 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 85: Expected=1 Actual=0
+#    Time: 868 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 86: PASS Expected=1 Actual=1
+# ** Error: Cycle 87: Expected=0 Actual=1
+#    Time: 888 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 88: Expected=1 Actual=0
+#    Time: 898 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 89: PASS Expected=1 Actual=1
+# Cycle 90: PASS Expected=0 Actual=0
+# Cycle 91: PASS Expected=0 Actual=0
+# ** Error: Cycle 92: Expected=0 Actual=1
+#    Time: 938 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 93: Expected=1 Actual=0
+#    Time: 948 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 94: PASS Expected=1 Actual=1
+# ** Error: Cycle 95: Expected=0 Actual=1
+#    Time: 968 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 96: PASS Expected=1 Actual=1
+# Cycle 97: PASS Expected=0 Actual=0
+# ** Error: Cycle 98: Expected=0 Actual=1
+#    Time: 998 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 99: PASS Expected=1 Actual=1
+# ** Error: Cycle 100: Expected=0 Actual=1
+#    Time: 1018 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 101: Expected=1 Actual=0
+#    Time: 1028 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 102: Expected=1 Actual=0
+#    Time: 1038 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 103: PASS Expected=1 Actual=1
+# ** Error: Cycle 104: Expected=0 Actual=1
+#    Time: 1058 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 105: Expected=1 Actual=0
+#    Time: 1068 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 106: Expected=1 Actual=0
+#    Time: 1078 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 107: PASS Expected=1 Actual=1
+# Cycle 108: PASS Expected=0 Actual=0
+# ** Error: Cycle 109: Expected=0 Actual=1
+#    Time: 1108 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 110: Expected=1 Actual=0
+#    Time: 1118 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 111: PASS Expected=1 Actual=1
+# Cycle 112: PASS Expected=0 Actual=0
+# ** Error: Cycle 113: Expected=0 Actual=1
+#    Time: 1148 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 114: PASS Expected=1 Actual=1
+# ** Error: Cycle 115: Expected=0 Actual=1
+#    Time: 1168 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 116: PASS Expected=1 Actual=1
+# ** Error: Cycle 117: Expected=0 Actual=1
+#    Time: 1188 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 118: PASS Expected=1 Actual=1
+# ** Error: Cycle 119: Expected=0 Actual=1
+#    Time: 1208 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 120: Expected=1 Actual=0
+#    Time: 1218 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 121: Expected=1 Actual=0
+#    Time: 1228 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 122: Expected=1 Actual=0
+#    Time: 1238 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 123: Expected=1 Actual=0
+#    Time: 1248 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 124: Expected=1 Actual=0
+#    Time: 1258 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# ** Error: Cycle 125: Expected=1 Actual=0
+#    Time: 1268 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 161
+# Cycle 126: PASS Expected=1 Actual=1
+# PRBS period output check PASS
+# 
+# ==========================================
+#  PRBS7 TEST FAILED: 64 errors
+# ==========================================
+# ** Note: $stop    : ./tb/prbs/serial_lfsr_tb.sv(265)
+#    Time: 1336 ns  Iteration: 0  Instance: /serial_lfsr_tb
+# Break in Module serial_lfsr_tb at ./tb/prbs/serial_lfsr_tb.sv line 265
+do ./tb/prbs/run.do.txt
+# 0
+# ./sim/prbs
+# ./sim/prbs/logs
+# ./sim/prbs/logs/prbs7.log
+# 
+# ==========================================
+#  SERIAL LFSR PRBS7 SIMULATION
+# ==========================================
+# 
+# INFO: Log file = ./sim/prbs/logs/prbs7.log
+# End time: 23:19:30 on Sep 16,2026, Elapsed time: 0:02:30
+# Errors: 64, Warnings: 0
+# 
+# INFO: Creating work library...
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap work work 
+# Modifying E:/Courses/serdes_digital_project/serdes_digial_project.mpf
+# 
+# INFO: Compiling RTL...
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 23:19:30 on Sep 16,2026
+# vlog -reportprogress 300 -sv ./rtl/prbs/serial_lfsr.sv 
+# -- Compiling module serial_lfsr
+# 
+# Top level modules:
+# 	serial_lfsr
+# End time: 23:19:30 on Sep 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# INFO: Compiling testbench...
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 23:19:30 on Sep 16,2026
+# vlog -reportprogress 300 -sv ./tb/prbs/serial_lfsr_tb.sv 
+# -- Compiling module serial_lfsr_tb
+# 
+# Top level modules:
+# 	serial_lfsr_tb
+# End time: 23:19:30 on Sep 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# INFO: Starting simulation...
+# vsim -voptargs="+acc" work.serial_lfsr_tb 
+# Start time: 23:19:30 on Sep 16,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.serial_lfsr_tb(fast)
+# Loading work.serial_lfsr(fast)
+# 
+# INFO: Waveform disabled
+# 
+# INFO: Running simulation...
+# 
+# ==========================================
+#  PRBS7 TEST START
+# ==========================================
+# Initial state PASS: Expected=0 Actual=0
+# Cycle 1: PASS Expected=0 Actual=0
+# Cycle 2: PASS Expected=0 Actual=0
+# Cycle 3: PASS Expected=0 Actual=0
+# Cycle 4: PASS Expected=0 Actual=0
+# ** Error: Cycle 5: Expected=0 Actual=1
+#    Time: 68 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 6: PASS Expected=1 Actual=1
+# Cycle 7: PASS Expected=0 Actual=0
+# Cycle 8: PASS Expected=0 Actual=0
+# Cycle 9: PASS Expected=0 Actual=0
+# Cycle 10: PASS Expected=0 Actual=0
+# ** Error: Cycle 11: Expected=0 Actual=1
+#    Time: 128 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 12: Expected=1 Actual=0
+#    Time: 138 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 13: PASS Expected=1 Actual=1
+# Cycle 14: PASS Expected=0 Actual=0
+# Cycle 15: PASS Expected=0 Actual=0
+# Cycle 16: PASS Expected=0 Actual=0
+# ** Error: Cycle 17: Expected=0 Actual=1
+#    Time: 188 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 18: PASS Expected=1 Actual=1
+# ** Error: Cycle 19: Expected=0 Actual=1
+#    Time: 208 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 20: PASS Expected=1 Actual=1
+# Cycle 21: PASS Expected=0 Actual=0
+# Cycle 22: PASS Expected=0 Actual=0
+# ** Error: Cycle 23: Expected=0 Actual=1
+#    Time: 248 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 24: Expected=1 Actual=0
+#    Time: 258 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 25: Expected=1 Actual=0
+#    Time: 268 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 26: Expected=1 Actual=0
+#    Time: 278 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 27: PASS Expected=1 Actual=1
+# Cycle 28: PASS Expected=0 Actual=0
+# ** Error: Cycle 29: Expected=0 Actual=1
+#    Time: 308 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 30: PASS Expected=1 Actual=1
+# Cycle 31: PASS Expected=0 Actual=0
+# Cycle 32: PASS Expected=0 Actual=0
+# ** Error: Cycle 33: Expected=0 Actual=1
+#    Time: 348 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 34: PASS Expected=1 Actual=1
+# ** Error: Cycle 35: Expected=0 Actual=1
+#    Time: 368 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 36: Expected=1 Actual=0
+#    Time: 378 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 37: PASS Expected=1 Actual=1
+# Cycle 38: PASS Expected=0 Actual=0
+# ** Error: Cycle 39: Expected=0 Actual=1
+#    Time: 408 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 40: Expected=1 Actual=0
+#    Time: 418 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 41: Expected=1 Actual=0
+#    Time: 428 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 42: PASS Expected=1 Actual=1
+# ** Error: Cycle 43: Expected=0 Actual=1
+#    Time: 448 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 44: PASS Expected=1 Actual=1
+# ** Error: Cycle 45: Expected=0 Actual=1
+#    Time: 468 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 46: PASS Expected=1 Actual=1
+# Cycle 47: PASS Expected=0 Actual=0
+# ** Error: Cycle 48: Expected=0 Actual=1
+#    Time: 498 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 49: Expected=1 Actual=0
+#    Time: 508 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 50: Expected=1 Actual=0
+#    Time: 518 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 51: Expected=1 Actual=0
+#    Time: 528 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 52: Expected=1 Actual=0
+#    Time: 538 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 53: PASS Expected=1 Actual=1
+# ** Error: Cycle 54: Expected=0 Actual=1
+#    Time: 558 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 55: PASS Expected=1 Actual=1
+# Cycle 56: PASS Expected=0 Actual=0
+# Cycle 57: PASS Expected=0 Actual=0
+# Cycle 58: PASS Expected=0 Actual=0
+# ** Error: Cycle 59: Expected=0 Actual=1
+#    Time: 608 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 60: Expected=1 Actual=0
+#    Time: 618 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 61: Expected=1 Actual=0
+#    Time: 628 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 62: PASS Expected=1 Actual=1
+# Cycle 63: PASS Expected=0 Actual=0
+# Cycle 64: PASS Expected=0 Actual=0
+# ** Error: Cycle 65: Expected=0 Actual=1
+#    Time: 668 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 66: PASS Expected=1 Actual=1
+# Cycle 67: PASS Expected=0 Actual=0
+# ** Error: Cycle 68: Expected=0 Actual=1
+#    Time: 698 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 69: PASS Expected=1 Actual=1
+# Cycle 70: PASS Expected=0 Actual=0
+# ** Error: Cycle 71: Expected=0 Actual=1
+#    Time: 728 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 72: Expected=1 Actual=0
+#    Time: 738 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 73: PASS Expected=1 Actual=1
+# ** Error: Cycle 74: Expected=0 Actual=1
+#    Time: 758 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 75: Expected=1 Actual=0
+#    Time: 768 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 76: PASS Expected=1 Actual=1
+# ** Error: Cycle 77: Expected=0 Actual=1
+#    Time: 788 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 78: PASS Expected=1 Actual=1
+# ** Error: Cycle 79: Expected=0 Actual=1
+#    Time: 808 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 80: Expected=1 Actual=0
+#    Time: 818 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 81: PASS Expected=1 Actual=1
+# ** Error: Cycle 82: Expected=0 Actual=1
+#    Time: 838 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 83: Expected=1 Actual=0
+#    Time: 848 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 84: Expected=1 Actual=0
+#    Time: 858 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 85: Expected=1 Actual=0
+#    Time: 868 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 86: PASS Expected=1 Actual=1
+# ** Error: Cycle 87: Expected=0 Actual=1
+#    Time: 888 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 88: Expected=1 Actual=0
+#    Time: 898 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 89: PASS Expected=1 Actual=1
+# Cycle 90: PASS Expected=0 Actual=0
+# Cycle 91: PASS Expected=0 Actual=0
+# ** Error: Cycle 92: Expected=0 Actual=1
+#    Time: 938 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 93: Expected=1 Actual=0
+#    Time: 948 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 94: PASS Expected=1 Actual=1
+# ** Error: Cycle 95: Expected=0 Actual=1
+#    Time: 968 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 96: PASS Expected=1 Actual=1
+# Cycle 97: PASS Expected=0 Actual=0
+# ** Error: Cycle 98: Expected=0 Actual=1
+#    Time: 998 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 99: PASS Expected=1 Actual=1
+# ** Error: Cycle 100: Expected=0 Actual=1
+#    Time: 1018 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 101: Expected=1 Actual=0
+#    Time: 1028 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 102: Expected=1 Actual=0
+#    Time: 1038 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 103: PASS Expected=1 Actual=1
+# ** Error: Cycle 104: Expected=0 Actual=1
+#    Time: 1058 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 105: Expected=1 Actual=0
+#    Time: 1068 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 106: Expected=1 Actual=0
+#    Time: 1078 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 107: PASS Expected=1 Actual=1
+# Cycle 108: PASS Expected=0 Actual=0
+# ** Error: Cycle 109: Expected=0 Actual=1
+#    Time: 1108 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 110: Expected=1 Actual=0
+#    Time: 1118 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 111: PASS Expected=1 Actual=1
+# Cycle 112: PASS Expected=0 Actual=0
+# ** Error: Cycle 113: Expected=0 Actual=1
+#    Time: 1148 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 114: PASS Expected=1 Actual=1
+# ** Error: Cycle 115: Expected=0 Actual=1
+#    Time: 1168 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 116: PASS Expected=1 Actual=1
+# ** Error: Cycle 117: Expected=0 Actual=1
+#    Time: 1188 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 118: PASS Expected=1 Actual=1
+# ** Error: Cycle 119: Expected=0 Actual=1
+#    Time: 1208 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 120: Expected=1 Actual=0
+#    Time: 1218 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 121: Expected=1 Actual=0
+#    Time: 1228 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 122: Expected=1 Actual=0
+#    Time: 1238 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 123: Expected=1 Actual=0
+#    Time: 1248 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 124: Expected=1 Actual=0
+#    Time: 1258 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# ** Error: Cycle 125: Expected=1 Actual=0
+#    Time: 1268 ns  Scope: serial_lfsr_tb File: ./tb/prbs/serial_lfsr_tb.sv Line: 162
+# Cycle 126: PASS Expected=1 Actual=1
+# PRBS period output check PASS
+# 
+# ==========================================
+#  PRBS7 TEST FAILED: 64 errors
+# ==========================================
+# ** Note: $stop    : ./tb/prbs/serial_lfsr_tb.sv(266)
+#    Time: 1336 ns  Iteration: 0  Instance: /serial_lfsr_tb
+# Break in Module serial_lfsr_tb at ./tb/prbs/serial_lfsr_tb.sv line 266
+# 
+# ==========================================
+#  SIMULATION FINISHED
+# ==========================================
+# 
+# 
+# Log file: ./sim/prbs/logs/prbs7.log
+do ./tb/prbs/run.do.txt
+# 0
+# ./sim/prbs
+# ./sim/prbs/logs
+# ./sim/prbs/logs/prbs7.log
+# 
+# ==========================================
+#  SERIAL LFSR PRBS7 SIMULATION
+# ==========================================
+# 
+# INFO: Log file = ./sim/prbs/logs/prbs7.log
+# End time: 23:22:19 on Sep 16,2026, Elapsed time: 0:02:49
+# Errors: 64, Warnings: 0
+# 
+# INFO: Creating work library...
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap work work 
+# Modifying E:/Courses/serdes_digital_project/serdes_digial_project.mpf
+# 
+# INFO: Compiling RTL...
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 23:22:19 on Sep 16,2026
+# vlog -reportprogress 300 -sv ./rtl/prbs/serial_lfsr.sv 
+# -- Compiling module serial_lfsr
+# 
+# Top level modules:
+# 	serial_lfsr
+# End time: 23:22:20 on Sep 16,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# INFO: Compiling testbench...
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 23:22:20 on Sep 16,2026
+# vlog -reportprogress 300 -sv ./tb/prbs/serial_lfsr_tb.sv 
+# -- Compiling module serial_lfsr_tb
+# 
+# Top level modules:
+# 	serial_lfsr_tb
+# End time: 23:22:20 on Sep 16,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# INFO: Starting simulation...
+# vsim -voptargs="+acc" work.serial_lfsr_tb 
+# Start time: 23:22:20 on Sep 16,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.serial_lfsr_tb(fast)
+# Loading work.serial_lfsr(fast)
+# 
+# INFO: Waveform disabled
+# 
+# INFO: Running simulation...
+# 
+# ==========================================
+#  PRBS7 TEST START
+# ==========================================
+# Initial state PASS: Expected=0 Actual=0
+# Cycle 1: PASS Expected=0 Actual=0
+# Cycle 2: PASS Expected=0 Actual=0
+# Cycle 3: PASS Expected=0 Actual=0
+# Cycle 4: PASS Expected=0 Actual=0
+# Cycle 5: PASS Expected=0 Actual=0
+# Cycle 6: PASS Expected=1 Actual=1
+# Cycle 7: PASS Expected=0 Actual=0
+# Cycle 8: PASS Expected=0 Actual=0
+# Cycle 9: PASS Expected=0 Actual=0
+# Cycle 10: PASS Expected=0 Actual=0
+# Cycle 11: PASS Expected=0 Actual=0
+# Cycle 12: PASS Expected=1 Actual=1
+# Cycle 13: PASS Expected=1 Actual=1
+# Cycle 14: PASS Expected=0 Actual=0
+# Cycle 15: PASS Expected=0 Actual=0
+# Cycle 16: PASS Expected=0 Actual=0
+# Cycle 17: PASS Expected=0 Actual=0
+# Cycle 18: PASS Expected=1 Actual=1
+# Cycle 19: PASS Expected=0 Actual=0
+# Cycle 20: PASS Expected=1 Actual=1
+# Cycle 21: PASS Expected=0 Actual=0
+# Cycle 22: PASS Expected=0 Actual=0
+# Cycle 23: PASS Expected=0 Actual=0
+# Cycle 24: PASS Expected=1 Actual=1
+# Cycle 25: PASS Expected=1 Actual=1
+# Cycle 26: PASS Expected=1 Actual=1
+# Cycle 27: PASS Expected=1 Actual=1
+# Cycle 28: PASS Expected=0 Actual=0
+# Cycle 29: PASS Expected=0 Actual=0
+# Cycle 30: PASS Expected=1 Actual=1
+# Cycle 31: PASS Expected=0 Actual=0
+# Cycle 32: PASS Expected=0 Actual=0
+# Cycle 33: PASS Expected=0 Actual=0
+# Cycle 34: PASS Expected=1 Actual=1
+# Cycle 35: PASS Expected=0 Actual=0
+# Cycle 36: PASS Expected=1 Actual=1
+# Cycle 37: PASS Expected=1 Actual=1
+# Cycle 38: PASS Expected=0 Actual=0
+# Cycle 39: PASS Expected=0 Actual=0
+# Cycle 40: PASS Expected=1 Actual=1
+# Cycle 41: PASS Expected=1 Actual=1
+# Cycle 42: PASS Expected=1 Actual=1
+# Cycle 43: PASS Expected=0 Actual=0
+# Cycle 44: PASS Expected=1 Actual=1
+# Cycle 45: PASS Expected=0 Actual=0
+# Cycle 46: PASS Expected=1 Actual=1
+# Cycle 47: PASS Expected=0 Actual=0
+# Cycle 48: PASS Expected=0 Actual=0
+# Cycle 49: PASS Expected=1 Actual=1
+# Cycle 50: PASS Expected=1 Actual=1
+# Cycle 51: PASS Expected=1 Actual=1
+# Cycle 52: PASS Expected=1 Actual=1
+# Cycle 53: PASS Expected=1 Actual=1
+# Cycle 54: PASS Expected=0 Actual=0
+# Cycle 55: PASS Expected=1 Actual=1
+# Cycle 56: PASS Expected=0 Actual=0
+# Cycle 57: PASS Expected=0 Actual=0
+# Cycle 58: PASS Expected=0 Actual=0
+# Cycle 59: PASS Expected=0 Actual=0
+# Cycle 60: PASS Expected=1 Actual=1
+# Cycle 61: PASS Expected=1 Actual=1
+# Cycle 62: PASS Expected=1 Actual=1
+# Cycle 63: PASS Expected=0 Actual=0
+# Cycle 64: PASS Expected=0 Actual=0
+# Cycle 65: PASS Expected=0 Actual=0
+# Cycle 66: PASS Expected=1 Actual=1
+# Cycle 67: PASS Expected=0 Actual=0
+# Cycle 68: PASS Expected=0 Actual=0
+# Cycle 69: PASS Expected=1 Actual=1
+# Cycle 70: PASS Expected=0 Actual=0
+# Cycle 71: PASS Expected=0 Actual=0
+# Cycle 72: PASS Expected=1 Actual=1
+# Cycle 73: PASS Expected=1 Actual=1
+# Cycle 74: PASS Expected=0 Actual=0
+# Cycle 75: PASS Expected=1 Actual=1
+# Cycle 76: PASS Expected=1 Actual=1
+# Cycle 77: PASS Expected=0 Actual=0
+# Cycle 78: PASS Expected=1 Actual=1
+# Cycle 79: PASS Expected=0 Actual=0
+# Cycle 80: PASS Expected=1 Actual=1
+# Cycle 81: PASS Expected=1 Actual=1
+# Cycle 82: PASS Expected=0 Actual=0
+# Cycle 83: PASS Expected=1 Actual=1
+# Cycle 84: PASS Expected=1 Actual=1
+# Cycle 85: PASS Expected=1 Actual=1
+# Cycle 86: PASS Expected=1 Actual=1
+# Cycle 87: PASS Expected=0 Actual=0
+# Cycle 88: PASS Expected=1 Actual=1
+# Cycle 89: PASS Expected=1 Actual=1
+# Cycle 90: PASS Expected=0 Actual=0
+# Cycle 91: PASS Expected=0 Actual=0
+# Cycle 92: PASS Expected=0 Actual=0
+# Cycle 93: PASS Expected=1 Actual=1
+# Cycle 94: PASS Expected=1 Actual=1
+# Cycle 95: PASS Expected=0 Actual=0
+# Cycle 96: PASS Expected=1 Actual=1
+# Cycle 97: PASS Expected=0 Actual=0
+# Cycle 98: PASS Expected=0 Actual=0
+# Cycle 99: PASS Expected=1 Actual=1
+# Cycle 100: PASS Expected=0 Actual=0
+# Cycle 101: PASS Expected=1 Actual=1
+# Cycle 102: PASS Expected=1 Actual=1
+# Cycle 103: PASS Expected=1 Actual=1
+# Cycle 104: PASS Expected=0 Actual=0
+# Cycle 105: PASS Expected=1 Actual=1
+# Cycle 106: PASS Expected=1 Actual=1
+# Cycle 107: PASS Expected=1 Actual=1
+# Cycle 108: PASS Expected=0 Actual=0
+# Cycle 109: PASS Expected=0 Actual=0
+# Cycle 110: PASS Expected=1 Actual=1
+# Cycle 111: PASS Expected=1 Actual=1
+# Cycle 112: PASS Expected=0 Actual=0
+# Cycle 113: PASS Expected=0 Actual=0
+# Cycle 114: PASS Expected=1 Actual=1
+# Cycle 115: PASS Expected=0 Actual=0
+# Cycle 116: PASS Expected=1 Actual=1
+# Cycle 117: PASS Expected=0 Actual=0
+# Cycle 118: PASS Expected=1 Actual=1
+# Cycle 119: PASS Expected=0 Actual=0
+# Cycle 120: PASS Expected=1 Actual=1
+# Cycle 121: PASS Expected=1 Actual=1
+# Cycle 122: PASS Expected=1 Actual=1
+# Cycle 123: PASS Expected=1 Actual=1
+# Cycle 124: PASS Expected=1 Actual=1
+# Cycle 125: PASS Expected=1 Actual=1
+# Cycle 126: PASS Expected=1 Actual=1
+# PRBS period output check PASS
+# 
+# ==========================================
+#  ALL PRBS7 TESTS PASSED
+# ==========================================
+# ** Note: $stop    : ./tb/prbs/serial_lfsr_tb.sv(266)
+#    Time: 1336 ns  Iteration: 0  Instance: /serial_lfsr_tb
+# Break in Module serial_lfsr_tb at ./tb/prbs/serial_lfsr_tb.sv line 266

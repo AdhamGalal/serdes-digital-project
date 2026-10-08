@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Simulation output
+work/
+transcript
+*.wlf
+*.vcd
+*.vpd
+*.fsdb
+*.vdb
+*.mti
+*.mpf
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# Editor files
+.vscode/
+.idea/
+
+# Operating system
+.DS_Store
+Thumbs.db

@@ -1,0 +1,185 @@
+# ============================================================
+# PRBS7 Golden Reference Model
+#
+# Matches the SystemVerilog implementation:
+#
+#   feedback  = lfsr[6] ^ lfsr[5];
+#   lfsr_next = {lfsr[5:0], feedback};
+#   prbs_o    = lfsr[6];
+#
+# Polynomial:
+#   x^7 + x^6 + 1
+#
+# Expected maximal period:
+#   2^7 - 1 = 127
+# ============================================================
+
+
+# ------------------------------------------------------------
+# Configuration
+# ------------------------------------------------------------
+
+SEED = 0b0000001
+NUM_CYCLES = 127
+
+OUTPUT_FILE = "prbs7_expected.txt"
+STATE_FILE  = "prbs7_states.txt"
+
+
+# ------------------------------------------------------------
+# Sanity checks
+# ------------------------------------------------------------
+
+if SEED == 0:
+    raise ValueError("PRBS7 seed cannot be zero.")
+
+if SEED > 0x7F:
+    raise ValueError("PRBS7 seed must be a 7-bit value.")
+
+
+# ------------------------------------------------------------
+# Initialize LFSR
+# ------------------------------------------------------------
+
+lfsr = SEED
+
+expected_output = []
+visited_states = set()
+
+
+# ------------------------------------------------------------
+# Open output files
+# ------------------------------------------------------------
+
+with open(OUTPUT_FILE, "w") as output_file, \
+     open(STATE_FILE, "w") as state_file:
+
+    print("--------------------------------------------------")
+    print(" PRBS7 GOLDEN MODEL")
+    print("--------------------------------------------------")
+    print(f"Seed          : {SEED:07b}")
+    print(f"Number cycles : {NUM_CYCLES}")
+    print()
+    print("Cycle | LFSR State | PRBS Output | Feedback")
+    print("---------------------------------------------")
+
+    # --------------------------------------------------------
+    # Generate sequence
+    # --------------------------------------------------------
+
+    for cycle in range(NUM_CYCLES):
+
+        # Detect an early repeated state
+        if lfsr in visited_states:
+            raise RuntimeError(
+                f"LFSR repeated early at cycle {cycle}: "
+                f"{lfsr:07b}"
+            )
+
+        visited_states.add(lfsr)
+
+        # ----------------------------------------------------
+        # PRBS output
+        #
+        # Equivalent SV:
+        # assign prbs_o = lfsr[6];
+        # ----------------------------------------------------
+
+        prbs_o = (lfsr >> 6) & 1
+
+
+        # ----------------------------------------------------
+        # Feedback calculation
+        #
+        # Equivalent SV:
+        # assign feedback = lfsr[6] ^ lfsr[5];
+        # ----------------------------------------------------
+
+        bit6 = (lfsr >> 6) & 1
+        bit5 = (lfsr >> 5) & 1
+
+        feedback = bit6 ^ bit5
+
+
+        # ----------------------------------------------------
+        # Print current state
+        # ----------------------------------------------------
+
+        print(
+            f"{cycle:5d} | "
+            f"{lfsr:07b}    | "
+            f"{prbs_o}           | "
+            f"{feedback}"
+        )
+
+
+        # ----------------------------------------------------
+        # Store expected PRBS output
+        # ----------------------------------------------------
+
+        expected_output.append(prbs_o)
+
+
+        # ----------------------------------------------------
+        # Dump files for SystemVerilog TB
+        # ----------------------------------------------------
+
+        # One PRBS bit per line
+        output_file.write(f"{prbs_o}\n")
+
+        # One 7-bit LFSR state per line
+        state_file.write(f"{lfsr:07b}\n")
+
+
+        # ----------------------------------------------------
+        # Advance LFSR
+        #
+        # Equivalent SV:
+        # lfsr_next = {lfsr[5:0], feedback};
+        # ----------------------------------------------------
+
+        lfsr = ((lfsr << 1) & 0x7F) | feedback
+
+
+# ------------------------------------------------------------
+# Print complete PRBS sequence
+# ------------------------------------------------------------
+
+print()
+print("Expected PRBS sequence:")
+print("".join(map(str, expected_output)))
+
+
+# ------------------------------------------------------------
+# Period verification
+# ------------------------------------------------------------
+
+print()
+print("--------------------------------------------------")
+print(" PERIOD CHECK")
+print("--------------------------------------------------")
+
+print(f"Initial state    : {SEED:07b}")
+print(f"State after 127  : {lfsr:07b}")
+print(f"Unique states    : {len(visited_states)}")
+
+
+if lfsr == SEED and len(visited_states) == 127:
+    print()
+    print("PASS: PRBS7 period = 127")
+else:
+    print()
+    print("FAIL: LFSR does not have the expected period.")
+
+
+# ------------------------------------------------------------
+# Output file information
+# ------------------------------------------------------------
+
+print()
+print("--------------------------------------------------")
+print(" GENERATED FILES")
+print("--------------------------------------------------")
+
+print(f"Expected outputs : {OUTPUT_FILE}")
+print(f"LFSR states      : {STATE_FILE}")

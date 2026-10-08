@@ -1,0 +1,203 @@
+# ============================================================
+# Serial LFSR PRBS7 ModelSim Simulation
+#
+# Usage:
+#
+#   do ./tb/prbs/run.do
+#       -> Run simulation without waveform
+#
+#   do ./tb/prbs/run.do wave
+#       -> Run simulation with waveform
+#
+# IMPORTANT:
+#   Run this script from the serdes-digital-project root.
+#
+# Project structure:
+#
+#   serdes-digital-project/
+#   |
+#   +-- rtl/
+#   |   +-- tx/
+#   |       +-- prbs/
+#   |           +-- serial_lfsr.sv
+#   |
+#   +-- tb/
+#   |   +-- prbs/
+#   |       +-- serial_lfsr_tb.sv
+#   |       +-- prbs7_expected.txt
+#   |       +-- run.do
+#   |
+#   +-- models/
+#   |   +-- python/
+#   |       +-- prbs7_model.py
+#   |
+#   +-- sim/
+#       +-- prbs/
+#           +-- logs/
+#               +-- prbs7.log
+#
+# ============================================================
+
+
+# ============================================================
+# Configuration
+# ============================================================
+
+set ENABLE_WAVE 0
+
+set SIM_DIR  "./sim/prbs"
+set LOG_DIR  "$SIM_DIR/logs"
+set LOG_FILE "$LOG_DIR/prbs7.log"
+
+
+# ============================================================
+# Parse Arguments
+# ============================================================
+
+if {$argc > 0} {
+
+    if {[lindex $argv 0] == "wave"} {
+
+        set ENABLE_WAVE 1
+
+    }
+
+}
+
+
+# ============================================================
+# Create Simulation Directories
+# ============================================================
+
+file mkdir $SIM_DIR
+file mkdir $LOG_DIR
+
+
+# ============================================================
+# Start Logging
+# ============================================================
+
+transcript file $LOG_FILE
+
+puts ""
+puts "=========================================="
+puts " SERIAL LFSR PRBS7 SIMULATION"
+puts "=========================================="
+puts ""
+puts "INFO: Log file = $LOG_FILE"
+
+
+# ============================================================
+# Stop Existing Simulation
+# ============================================================
+
+quit -sim
+
+
+# ============================================================
+# Create Work Library
+# ============================================================
+
+puts ""
+puts "INFO: Creating work library..."
+
+if {[file exists work]} {
+
+    vdel -lib work -all
+
+}
+
+vlib work
+vmap work work
+
+
+# ============================================================
+# Compile RTL
+# ============================================================
+
+puts ""
+puts "INFO: Compiling RTL..."
+
+vlog -sv ./rtl/prbs/serial_lfsr.sv
+
+
+# ============================================================
+# Compile Testbench
+# ============================================================
+
+puts ""
+puts "INFO: Compiling testbench..."
+
+vlog -sv ./tb/prbs/serial_lfsr_tb.sv
+
+
+# ============================================================
+# Start Simulation
+# ============================================================
+
+puts ""
+puts "INFO: Starting simulation..."
+
+vsim -voptargs=+acc work.serial_lfsr_tb
+
+
+# ============================================================
+# Optional Waveform
+# ============================================================
+
+# ============================================================
+# Optional Waveform
+# ============================================================
+
+if {$ENABLE_WAVE} {
+
+    puts ""
+    puts "INFO: Waveform enabled"
+
+    # Explicitly open the Wave window
+    view wave
+
+    # Clear any old signals
+
+    # --------------------------------------------------------
+    # Testbench Signals
+    # --------------------------------------------------------
+
+    add wave -divider "Testbench"
+
+    add wave sim:/serial_lfsr_tb/clk
+    add wave sim:/serial_lfsr_tb/rst_n
+    add wave sim:/serial_lfsr_tb/i_enable
+    add wave sim:/serial_lfsr_tb/prbs_o
+
+    # --------------------------------------------------------
+    # DUT Internal Signals
+    # --------------------------------------------------------
+
+    add wave -divider "Serial LFSR DUT"
+
+    add wave sim:/serial_lfsr_tb/dut/lfsr
+    add wave sim:/serial_lfsr_tb/dut/lfsr_next
+    add wave sim:/serial_lfsr_tb/dut/feedback
+
+    radix binary
+
+} else {
+
+    puts ""
+    puts "INFO: Waveform disabled"
+
+}
+
+
+# ============================================================
+# Run Simulation
+# ============================================================
+
+puts ""
+puts "INFO: Running simulation..."
+puts ""
+
+run -all
+
+
