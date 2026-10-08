@@ -118,3 +118,15 @@ Once the basic SerDes architecture is operational, the project may be extended w
 This is an educational project, not a production-ready SerDes PHY. Analog-oriented components may initially be represented by simplified Python or behavioral models.
 
 The primary objective is to develop a deeper understanding of SerDes architecture from a digital IC design perspective while practicing reusable RTL design and verification techniques.
+
+### 8-bit Parallel PRBS7 Generator
+
+**Status:** RTL implemented — verification pending.
+
+The initial parallel PRBS7 generator produces eight consecutive bits per enabled clock cycle using an explicitly unrolled LFSR architecture.
+
+- **RTL:** `rtl/prbs/parallel_lfsr.sv`
+- **Documentation:** [Parallel PRBS7](docs/parallel_prbs7.md)
+- **Next milestone:** Self-checking SystemVerilog testbench
+
+Future versions will explore loop-based implementations, configurable PRBS orders, and PPA comparisons.
